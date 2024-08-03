@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2632CECE2C5E76AC00E4B344 /* Volea_MeasureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632CECD2C5E76AC00E4B344 /* Volea_MeasureApp.swift */; };
+		2632CECE2C5E76AC00E4B344 /* VoleaMeasureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632CECD2C5E76AC00E4B344 /* VoleaMeasureApp.swift */; };
 		2632CED02C5E76AC00E4B344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632CECF2C5E76AC00E4B344 /* ContentView.swift */; };
 		2632CED22C5E76AC00E4B344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2632CED12C5E76AC00E4B344 /* Assets.xcassets */; };
-		2632CED52C5E76AC00E4B344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2632CED42C5E76AC00E4B344 /* Preview Assets.xcassets */; };
-		2632CEDB2C5E76AC00E4B344 /* Volea Measure Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2632CEDA2C5E76AC00E4B344 /* Volea Measure Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2632CEE02C5E76AC00E4B344 /* Volea_MeasureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632CEDF2C5E76AC00E4B344 /* Volea_MeasureApp.swift */; };
+		2632CEDB2C5E76AC00E4B344 /* Volea Measure (Watch).app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2632CEDA2C5E76AC00E4B344 /* Volea Measure (Watch).app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2632CEE02C5E76AC00E4B344 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632CEDF2C5E76AC00E4B344 /* WatchApp.swift */; };
 		2632CEE22C5E76AC00E4B344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632CEE12C5E76AC00E4B344 /* ContentView.swift */; };
 		2632CEE42C5E76AD00E4B344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2632CEE32C5E76AD00E4B344 /* Assets.xcassets */; };
-		2632CEE72C5E76AD00E4B344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2632CEE62C5E76AD00E4B344 /* Preview Assets.xcassets */; };
+		2632CEF42C5E777600E4B344 /* MeasureData in Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF32C5E777600E4B344 /* MeasureData */; };
+		2632CEF52C5E777600E4B344 /* MeasureData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF32C5E777600E4B344 /* MeasureData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2632CEF82C5E777A00E4B344 /* MeasureData in Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF72C5E777A00E4B344 /* MeasureData */; };
+		2632CEF92C5E777B00E4B344 /* MeasureData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF72C5E777A00E4B344 /* MeasureData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,24 +37,47 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				2632CEDB2C5E76AC00E4B344 /* Volea Measure Watch App.app in Embed Watch Content */,
+				2632CEDB2C5E76AC00E4B344 /* Volea Measure (Watch).app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2632CEF62C5E777600E4B344 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2632CEF52C5E777600E4B344 /* MeasureData in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2632CEFA2C5E777B00E4B344 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2632CEF92C5E777B00E4B344 /* MeasureData in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2632CECA2C5E76AC00E4B344 /* Volea Measure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volea Measure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2632CECD2C5E76AC00E4B344 /* Volea_MeasureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volea_MeasureApp.swift; sourceTree = "<group>"; };
+		2632CECD2C5E76AC00E4B344 /* VoleaMeasureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoleaMeasureApp.swift; sourceTree = "<group>"; };
 		2632CECF2C5E76AC00E4B344 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2632CED12C5E76AC00E4B344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2632CED42C5E76AC00E4B344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2632CEDA2C5E76AC00E4B344 /* Volea Measure Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volea Measure Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2632CEDF2C5E76AC00E4B344 /* Volea_MeasureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volea_MeasureApp.swift; sourceTree = "<group>"; };
+		2632CEDA2C5E76AC00E4B344 /* Volea Measure (Watch).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volea Measure (Watch).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2632CEDF2C5E76AC00E4B344 /* WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp.swift; sourceTree = "<group>"; };
 		2632CEE12C5E76AC00E4B344 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2632CEE32C5E76AD00E4B344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2632CEE62C5E76AD00E4B344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2632CEF12C5E772400E4B344 /* MeasureData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MeasureData; sourceTree = "<group>"; };
+		2632CEFB2C5E778300E4B344 /* Multiplatform.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Multiplatform.entitlements; sourceTree = "<group>"; };
+		2632CEFC2C5E778B00E4B344 /* Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Watch.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2632CEF42C5E777600E4B344 /* MeasureData in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2632CEF82C5E777A00E4B344 /* MeasureData in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +103,11 @@
 		2632CEC12C5E76AB00E4B344 = {
 			isa = PBXGroup;
 			children = (
-				2632CECC2C5E76AC00E4B344 /* Volea Measure */,
-				2632CEDE2C5E76AC00E4B344 /* Volea Measure Watch App */,
+				2632CEF12C5E772400E4B344 /* MeasureData */,
+				2632CECC2C5E76AC00E4B344 /* Multiplatform */,
+				2632CEDE2C5E76AC00E4B344 /* Watch */,
 				2632CECB2C5E76AC00E4B344 /* Products */,
+				2632CEF22C5E777600E4B344 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,47 +115,38 @@
 			isa = PBXGroup;
 			children = (
 				2632CECA2C5E76AC00E4B344 /* Volea Measure.app */,
-				2632CEDA2C5E76AC00E4B344 /* Volea Measure Watch App.app */,
+				2632CEDA2C5E76AC00E4B344 /* Volea Measure (Watch).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2632CECC2C5E76AC00E4B344 /* Volea Measure */ = {
+		2632CECC2C5E76AC00E4B344 /* Multiplatform */ = {
 			isa = PBXGroup;
 			children = (
-				2632CECD2C5E76AC00E4B344 /* Volea_MeasureApp.swift */,
+				2632CECD2C5E76AC00E4B344 /* VoleaMeasureApp.swift */,
 				2632CECF2C5E76AC00E4B344 /* ContentView.swift */,
 				2632CED12C5E76AC00E4B344 /* Assets.xcassets */,
-				2632CED32C5E76AC00E4B344 /* Preview Content */,
+				2632CEFB2C5E778300E4B344 /* Multiplatform.entitlements */,
 			);
-			path = "Volea Measure";
+			path = Multiplatform;
 			sourceTree = "<group>";
 		};
-		2632CED32C5E76AC00E4B344 /* Preview Content */ = {
+		2632CEDE2C5E76AC00E4B344 /* Watch */ = {
 			isa = PBXGroup;
 			children = (
-				2632CED42C5E76AC00E4B344 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		2632CEDE2C5E76AC00E4B344 /* Volea Measure Watch App */ = {
-			isa = PBXGroup;
-			children = (
-				2632CEDF2C5E76AC00E4B344 /* Volea_MeasureApp.swift */,
+				2632CEDF2C5E76AC00E4B344 /* WatchApp.swift */,
 				2632CEE12C5E76AC00E4B344 /* ContentView.swift */,
 				2632CEE32C5E76AD00E4B344 /* Assets.xcassets */,
-				2632CEE52C5E76AD00E4B344 /* Preview Content */,
+				2632CEFC2C5E778B00E4B344 /* Watch.entitlements */,
 			);
-			path = "Volea Measure Watch App";
+			path = Watch;
 			sourceTree = "<group>";
 		};
-		2632CEE52C5E76AD00E4B344 /* Preview Content */ = {
+		2632CEF22C5E777600E4B344 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2632CEE62C5E76AD00E4B344 /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +160,7 @@
 				2632CEC72C5E76AC00E4B344 /* Frameworks */,
 				2632CEC82C5E76AC00E4B344 /* Resources */,
 				2632CEED2C5E76AD00E4B344 /* Embed Watch Content */,
+				2632CEF62C5E777600E4B344 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,25 +168,32 @@
 				2632CEDD2C5E76AC00E4B344 /* PBXTargetDependency */,
 			);
 			name = "Volea Measure";
+			packageProductDependencies = (
+				2632CEF32C5E777600E4B344 /* MeasureData */,
+			);
 			productName = "Volea Measure";
 			productReference = 2632CECA2C5E76AC00E4B344 /* Volea Measure.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2632CED92C5E76AC00E4B344 /* Volea Measure Watch App */ = {
+		2632CED92C5E76AC00E4B344 /* Volea Measure (Watch) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2632CEEA2C5E76AD00E4B344 /* Build configuration list for PBXNativeTarget "Volea Measure Watch App" */;
+			buildConfigurationList = 2632CEEA2C5E76AD00E4B344 /* Build configuration list for PBXNativeTarget "Volea Measure (Watch)" */;
 			buildPhases = (
 				2632CED62C5E76AC00E4B344 /* Sources */,
 				2632CED72C5E76AC00E4B344 /* Frameworks */,
 				2632CED82C5E76AC00E4B344 /* Resources */,
+				2632CEFA2C5E777B00E4B344 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Volea Measure Watch App";
+			name = "Volea Measure (Watch)";
+			packageProductDependencies = (
+				2632CEF72C5E777A00E4B344 /* MeasureData */,
+			);
 			productName = "Volea Measure Watch App";
-			productReference = 2632CEDA2C5E76AC00E4B344 /* Volea Measure Watch App.app */;
+			productReference = 2632CEDA2C5E76AC00E4B344 /* Volea Measure (Watch).app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +228,7 @@
 			projectRoot = "";
 			targets = (
 				2632CEC92C5E76AC00E4B344 /* Volea Measure */,
-				2632CED92C5E76AC00E4B344 /* Volea Measure Watch App */,
+				2632CED92C5E76AC00E4B344 /* Volea Measure (Watch) */,
 			);
 		};
 /* End PBXProject section */
@@ -210,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2632CED52C5E76AC00E4B344 /* Preview Assets.xcassets in Resources */,
 				2632CED22C5E76AC00E4B344 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +246,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2632CEE72C5E76AD00E4B344 /* Preview Assets.xcassets in Resources */,
 				2632CEE42C5E76AD00E4B344 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2632CED02C5E76AC00E4B344 /* ContentView.swift in Sources */,
-				2632CECE2C5E76AC00E4B344 /* Volea_MeasureApp.swift in Sources */,
+				2632CECE2C5E76AC00E4B344 /* VoleaMeasureApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2632CEE22C5E76AC00E4B344 /* ContentView.swift in Sources */,
-				2632CEE02C5E76AC00E4B344 /* Volea_MeasureApp.swift in Sources */,
+				2632CEE02C5E76AC00E4B344 /* WatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +276,7 @@
 /* Begin PBXTargetDependency section */
 		2632CEDD2C5E76AC00E4B344 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2632CED92C5E76AC00E4B344 /* Volea Measure Watch App */;
+			target = 2632CED92C5E76AC00E4B344 /* Volea Measure (Watch) */;
 			targetProxy = 2632CEDC2C5E76AC00E4B344 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -375,9 +401,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Watch/Watch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Volea Measure Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6873XT548M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -389,7 +416,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.spaceforgers.volea.Volea-Measure.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spaceforgers.volea.measure.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -405,9 +432,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Watch/Watch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Volea Measure Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6873XT548M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -419,7 +447,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.spaceforgers.volea.Volea-Measure.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spaceforgers.volea.measure.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -437,9 +465,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Multiplatform/Multiplatform.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Volea Measure/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6873XT548M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -447,20 +476,24 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.spaceforgers.volea.Volea-Measure";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spaceforgers.volea.measure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,9 +503,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Multiplatform/Multiplatform.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Volea Measure/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6873XT548M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -480,20 +514,24 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.spaceforgers.volea.Volea-Measure";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spaceforgers.volea.measure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -510,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2632CEEA2C5E76AD00E4B344 /* Build configuration list for PBXNativeTarget "Volea Measure Watch App" */ = {
+		2632CEEA2C5E76AD00E4B344 /* Build configuration list for PBXNativeTarget "Volea Measure (Watch)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2632CEEB2C5E76AD00E4B344 /* Debug */,
@@ -529,6 +567,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2632CEF32C5E777600E4B344 /* MeasureData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MeasureData;
+		};
+		2632CEF72C5E777A00E4B344 /* MeasureData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MeasureData;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2632CEC22C5E76AB00E4B344 /* Project object */;
 }
