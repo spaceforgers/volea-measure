@@ -7,10 +7,8 @@ let package = Package(
     name: "MeasureData",
     defaultLocalization: "en",
     platforms: [
-        .macOS(.v14),
         .iOS(.v17),
-        .watchOS(.v10),
-        .visionOS(.v1)
+        .watchOS(.v10)
     ],
     
     products: [

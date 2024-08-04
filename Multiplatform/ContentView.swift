@@ -9,13 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            content
+                .navigationTitle("Volea Measure")
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        EditButton()
+                    }
+                    
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button("Export") {
+                            
+                        }
+                    }
+                }
         }
-        .padding()
+    }
+    
+    @ViewBuilder
+    private var content: some View {
+        List {
+            
+        }
     }
 }
 
