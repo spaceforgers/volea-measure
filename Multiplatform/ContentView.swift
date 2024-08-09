@@ -6,8 +6,15 @@
 //
 
 import SwiftUI
+import SwiftData
+import MeasureData
 
 struct ContentView: View {
+    @Query private var sessions: [CollectedSession]
+    
+    @State private var selection = Set<CollectedSession>()
+    @State private var isRecordingViewPresented: Bool = false
+    
     var body: some View {
         NavigationStack {
             content
@@ -18,17 +25,23 @@ struct ContentView: View {
                     }
                     
                     ToolbarItem(placement: .topBarTrailing) {
-                        Button("Export") {
-                            
-                        }
+                        Button(action: {
+                            isRecordingViewPresented.toggle()
+                        }, label: {
+                            Image(systemName: "plus")
+                        })
                     }
                 }
+            
+                .sheet(isPresented: $isRecordingViewPresented, content: {
+                    RecordingView()
+                })
         }
     }
     
     @ViewBuilder
     private var content: some View {
-        List {
+        List(sessions, selection: $selection) { session in
             
         }
     }

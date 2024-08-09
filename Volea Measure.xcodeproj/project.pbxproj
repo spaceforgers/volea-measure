@@ -18,6 +18,7 @@
 		2632CEF52C5E777600E4B344 /* MeasureData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF32C5E777600E4B344 /* MeasureData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2632CEF82C5E777A00E4B344 /* MeasureData in Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF72C5E777A00E4B344 /* MeasureData */; };
 		2632CEF92C5E777B00E4B344 /* MeasureData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF72C5E777A00E4B344 /* MeasureData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2699A67A2C6668D800C2DFFE /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2699A6792C6668D800C2DFFE /* RecordingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		2632CEF12C5E772400E4B344 /* MeasureData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MeasureData; sourceTree = "<group>"; };
 		2632CEFB2C5E778300E4B344 /* Multiplatform.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Multiplatform.entitlements; sourceTree = "<group>"; };
 		2632CEFC2C5E778B00E4B344 /* Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Watch.entitlements; sourceTree = "<group>"; };
+		2699A6792C6668D800C2DFFE /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				2632CECD2C5E76AC00E4B344 /* VoleaMeasureApp.swift */,
 				2632CECF2C5E76AC00E4B344 /* ContentView.swift */,
+				2699A6792C6668D800C2DFFE /* RecordingView.swift */,
 				2632CED12C5E76AC00E4B344 /* Assets.xcassets */,
 				2632CEFB2C5E778300E4B344 /* Multiplatform.entitlements */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				2632CED02C5E76AC00E4B344 /* ContentView.swift in Sources */,
 				2632CECE2C5E76AC00E4B344 /* VoleaMeasureApp.swift in Sources */,
+				2699A67A2C6668D800C2DFFE /* RecordingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +414,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Volea Measure";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.spaceforgers.volea.Volea-Measure";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.spaceforgers.voleameasure;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +445,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Volea Measure";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.spaceforgers.volea.Volea-Measure";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.spaceforgers.voleameasure;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
