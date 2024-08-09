@@ -12,7 +12,7 @@ import MeasureData
 
 @main
 struct WatchApp: App {
-    @WKExtensionDelegateAdaptor(ExtensionDelegate.self) var extensionDelegate
+    @WKApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     @State var collector = MeasureCollector.shared
     
@@ -28,7 +28,7 @@ struct WatchApp: App {
     }
 }
 
-final class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
+final class AppDelegate: NSObject, WKApplicationDelegate, WCSessionDelegate {
     func applicationDidFinishLaunching() {
         if WCSession.isSupported() {
             let session = WCSession.default
@@ -38,10 +38,16 @@ final class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate 
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: (any Error)?) {
-        
+        if let error {
+            print("[WCSession] WCSession activation error: \(error.localizedDescription)")
+        } else {
+            print("[WCSession] WCSession activated with state: \(activationState.rawValue)")
+        }
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        print("[WCSession] Received command: \(message)")
+        
         if let command = message["command"] as? String {
             switch command {
                 case "START":

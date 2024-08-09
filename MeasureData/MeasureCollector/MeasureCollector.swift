@@ -13,7 +13,7 @@ import WatchConnectivity
 
 @Observable
 public final class MeasureCollector {
-    public static let shared: MeasureCollector = MeasureCollector()
+    public static let shared: MeasureCollector = .init()
     
     @ObservationIgnored private let motionManager: CMMotionManager = CMMotionManager()
     @ObservationIgnored private var queue: OperationQueue = OperationQueue()
