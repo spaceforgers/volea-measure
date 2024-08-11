@@ -47,7 +47,15 @@ final class AppDelegate: NSObject, WKApplicationDelegate, WCSessionDelegate {
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         print("[WCSession] Received command: \(message)")
-        
+        handleMessage(message: message)
+    }
+    
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        print("[WCSession] Received applicationContext: \(applicationContext)")
+        handleMessage(message: applicationContext)
+    }
+    
+    private func handleMessage(message: [String: Any]) {
         if let command = message["command"] as? String {
             switch command {
                 case "START":

@@ -36,23 +36,11 @@ final class AppDelegate: NSObject, UIApplicationDelegate, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        if let command = message["command"] as? String {
-            switch command {
-                case "START":
-                    print("[WCSession] Sending START command to Apple Watch...")
-                    break
-                case "STOP":
-                    print("[WCSession] Sending STOP command to Apple Watch...")
-                    break
-                default:
-                    print("[WCSession] Command not recognized.")
-                    break
-            }
-        }
-        
-        if let additionalData = message["additionalData"] as? String {
-            print("[WCSession] Additional data received: \(additionalData)")
-        }
+        handleMessage(message: message)
+    }
+    
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        handleMessage(message: applicationContext)
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: (any Error)?) {
@@ -70,5 +58,25 @@ final class AppDelegate: NSObject, UIApplicationDelegate, WCSessionDelegate {
     func sessionDidDeactivate(_ session: WCSession) {
         print("[WCSession] Session inactive. Trying to activate again.")
         session.activate()
+    }
+    
+    private func handleMessage(message: [String: Any]) {
+        if let command = message["command"] as? String {
+            switch command {
+                case "START":
+                    print("[WCSession] Sending START command to Apple Watch...")
+                    break
+                case "STOP":
+                    print("[WCSession] Sending STOP command to Apple Watch...")
+                    break
+                default:
+                    print("[WCSession] Command not recognized.")
+                    break
+            }
+        }
+        
+        if let additionalData = message["additionalData"] as? String {
+            print("[WCSession] Additional data received: \(additionalData)")
+        }
     }
 }
