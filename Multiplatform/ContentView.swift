@@ -10,39 +10,33 @@ import SwiftData
 import MeasureData
 
 struct ContentView: View {
-    @Query private var sessions: [CollectedSession]
-    
-    @State private var selection = Set<CollectedSession>()
-    @State private var isRecordingViewPresented: Bool = false
+    @Query(sort: \CollectedSession.timestamp, order: .reverse) private var sessions: [CollectedSession]
     
     var body: some View {
         NavigationStack {
             content
-                .navigationTitle("Measure sessions")
+                .navigationTitle("Records")
                 .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        EditButton()
-                    }
-                    
                     ToolbarItem(placement: .topBarTrailing) {
-                        Button(action: {
-                            isRecordingViewPresented.toggle()
-                        }, label: {
-                            Image(systemName: "plus")
-                        })
+                        
                     }
                 }
             
-                .sheet(isPresented: $isRecordingViewPresented, content: {
-                    RecordingView()
-                })
+                .navigationDestination(for: CollectedSession.self, destination: SessionDetailView.init)
         }
     }
     
     @ViewBuilder
     private var content: some View {
-        List(sessions, selection: $selection) { session in
-            
+        List(sessions) { session in
+            NavigationLink(value: session, label: {
+                VStack(alignment: .leading) {
+                    Text(session.timestamp.formatted(date: .numeric, time: .shortened))
+                    Text("\(session.movementType.label) - \(session.handType.label) - \(session.movements?.count ?? 0) moves")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            })
         }
     }
 }

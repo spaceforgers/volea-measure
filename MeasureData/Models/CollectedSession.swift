@@ -10,19 +10,22 @@ import SwiftData
 
 @Model
 public final class CollectedSession: Identifiable {
-    @Attribute(.unique) public var id: UUID
-    public var timestamp: Date
-    public var movementTypeData: String
-    public var handTypeData: String
+    public var id: UUID = UUID()
+    public var timestamp: Date = Date()
+    public var movementTypeData: String = ""
+    public var handTypeData: String = ""
     
-    @Relationship(deleteRule: .cascade, inverse: \CollectedMovement.session) public var movements: [CollectedMovement]
+    @Relationship(deleteRule: .cascade, inverse: \CollectedMovement.session)
+    public var movements: [CollectedMovement]? = []
     
-    @Transient public var movementType: PadelMovementType {
+    @Transient
+    public var movementType: PadelMovementType {
         get { PadelMovementType(rawValue: movementTypeData) ?? .unknown }
         set { movementTypeData = newValue.rawValue }
     }
     
-    @Transient public var handType: Hand {
+    @Transient
+    public var handType: Hand {
         get { Hand(rawValue: handTypeData) ?? .right }
         set { handTypeData = newValue.rawValue }
     }

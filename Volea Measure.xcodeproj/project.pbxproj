@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2605DA5F2CCD58CA00FF801C /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605DA5E2CCD58CA00FF801C /* SessionDetailView.swift */; };
 		2632CECE2C5E76AC00E4B344 /* VoleaMeasureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632CECD2C5E76AC00E4B344 /* VoleaMeasureApp.swift */; };
 		2632CED02C5E76AC00E4B344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632CECF2C5E76AC00E4B344 /* ContentView.swift */; };
 		2632CED22C5E76AC00E4B344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2632CED12C5E76AC00E4B344 /* Assets.xcassets */; };
@@ -18,7 +19,6 @@
 		2632CEF52C5E777600E4B344 /* MeasureData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF32C5E777600E4B344 /* MeasureData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2632CEF82C5E777A00E4B344 /* MeasureData in Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF72C5E777A00E4B344 /* MeasureData */; };
 		2632CEF92C5E777B00E4B344 /* MeasureData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF72C5E777A00E4B344 /* MeasureData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2699A67A2C6668D800C2DFFE /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2699A6792C6668D800C2DFFE /* RecordingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2605DA5E2CCD58CA00FF801C /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
 		2632CECA2C5E76AC00E4B344 /* Volea Measure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volea Measure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2632CECD2C5E76AC00E4B344 /* VoleaMeasureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoleaMeasureApp.swift; sourceTree = "<group>"; };
 		2632CECF2C5E76AC00E4B344 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		2632CEF12C5E772400E4B344 /* MeasureData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MeasureData; sourceTree = "<group>"; };
 		2632CEFB2C5E778300E4B344 /* Multiplatform.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Multiplatform.entitlements; sourceTree = "<group>"; };
 		2632CEFC2C5E778B00E4B344 /* Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Watch.entitlements; sourceTree = "<group>"; };
-		2699A6792C6668D800C2DFFE /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,7 @@
 			children = (
 				2632CECD2C5E76AC00E4B344 /* VoleaMeasureApp.swift */,
 				2632CECF2C5E76AC00E4B344 /* ContentView.swift */,
-				2699A6792C6668D800C2DFFE /* RecordingView.swift */,
+				2605DA5E2CCD58CA00FF801C /* SessionDetailView.swift */,
 				2632CED12C5E76AC00E4B344 /* Assets.xcassets */,
 				2632CEFB2C5E778300E4B344 /* Multiplatform.entitlements */,
 			);
@@ -207,7 +207,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					2632CEC92C5E76AC00E4B344 = {
 						CreatedOnToolsVersion = 15.4;
@@ -261,8 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2632CED02C5E76AC00E4B344 /* ContentView.swift in Sources */,
+				2605DA5F2CCD58CA00FF801C /* SessionDetailView.swift in Sources */,
 				2632CECE2C5E76AC00E4B344 /* VoleaMeasureApp.swift in Sources */,
-				2699A67A2C6668D800C2DFFE /* RecordingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +320,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -381,6 +382,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -466,7 +468,6 @@
 		2632CEEF2C5E76AD00E4B344 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Multiplatform/Multiplatform.entitlements;
@@ -504,7 +505,6 @@
 		2632CEF02C5E76AD00E4B344 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Multiplatform/Multiplatform.entitlements;

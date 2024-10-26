@@ -11,16 +11,16 @@ import CoreMotion
 
 @Model
 public final class CollectedMovement {
-    public var session: CollectedSession
-    public var timestamp: Date
-    public var accelerationX: Double
-    public var accelerationY: Double
-    public var accelerationZ: Double
-    public var rotationX: Double
-    public var rotationY: Double
-    public var rotationZ: Double
+    public var session: CollectedSession?
+    public var timestamp: Date = Date()
+    public var accelerationX: Double = 0.0
+    public var accelerationY: Double = 0.0
+    public var accelerationZ: Double = 0.0
+    public var rotationX: Double = 0.0
+    public var rotationY: Double = 0.0
+    public var rotationZ: Double = 0.0
     
-    public init(session: CollectedSession, 
+    public init(session: CollectedSession?,
                 timestamp: Date = Date(),
                 accelerationX: Double,
                 accelerationY: Double, 
