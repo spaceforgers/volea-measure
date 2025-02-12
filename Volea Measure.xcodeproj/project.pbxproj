@@ -12,6 +12,7 @@
 		2632CEF52C5E777600E4B344 /* MeasureData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF32C5E777600E4B344 /* MeasureData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2632CEF82C5E777A00E4B344 /* MeasureData in Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF72C5E777A00E4B344 /* MeasureData */; };
 		2632CEF92C5E777B00E4B344 /* MeasureData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF72C5E777A00E4B344 /* MeasureData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		26B96A892D5D4556001439FE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 26B96A882D5D4551001439FE /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		2632CECA2C5E76AC00E4B344 /* Volea Measure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volea Measure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2632CEDA2C5E76AC00E4B344 /* Volea Measure (Watch).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volea Measure (Watch).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2632CEF12C5E772400E4B344 /* MeasureData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MeasureData; sourceTree = "<group>"; };
+		26B96A882D5D4551001439FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -94,6 +96,7 @@
 		2632CEC12C5E76AB00E4B344 = {
 			isa = PBXGroup;
 			children = (
+				26B96A882D5D4551001439FE /* README.md */,
 				2632CEF12C5E772400E4B344 /* MeasureData */,
 				266370F82CE280EC0071A236 /* Multiplatform */,
 				266371032CE281050071A236 /* Watch */,
@@ -213,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B96A892D5D4556001439FE /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +398,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 11.0;
@@ -425,6 +430,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
@@ -464,6 +470,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -501,6 +508,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;

@@ -87,31 +87,30 @@ final class WatchSessionDelegate: NSObject, WCSessionDelegate {
     ///   - session: The current WCSession.
     ///   - message: The message dictionary received from the iPhone.
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        Task {
-            // Extract the command from the message.
-            guard let command = message["command"] as? String else { return }
-            switch command {
-                case "startSession":
-                    sessionManager.startSession()
-                    
-                case "endSession":
-                    sessionManager.endSession()
-                    
-                case "startMovementRecording":
-                    // Parse the movement type and hand type from the message.
-                    if let movementTypeRaw = message["movementType"] as? String,
-                       let handTypeRaw = message["handType"] as? String,
-                       let movementType = PadelMovementType(rawValue: movementTypeRaw),
-                       let handType = Hand(rawValue: handTypeRaw) {
-                        sessionManager.startMovement(movementType: movementType, handType: handType)
-                    }
-                    
-                case "stopMovementRecording":
-                    sessionManager.stopMovement()
-                    
-                default:
-                    break
-            }
+        // Extract the command from the message.
+        guard let command = message["command"] as? String else { return }
+        
+        switch command {
+            case "startSession":
+                sessionManager.startSession()
+                
+            case "endSession":
+                sessionManager.endSession()
+                
+            case "startMovementRecording":
+                // Parse the movement type and hand type from the message.
+                if let movementTypeRaw = message["movementType"] as? String,
+                   let handTypeRaw = message["handType"] as? String,
+                   let movementType = PadelMovementType(rawValue: movementTypeRaw),
+                   let handType = Hand(rawValue: handTypeRaw) {
+                    sessionManager.startMovement(movementType: movementType, handType: handType)
+                }
+                
+            case "stopMovementRecording":
+                sessionManager.stopMovement()
+                
+            default:
+                break
         }
     }
 }
