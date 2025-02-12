@@ -3,18 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2605DA5F2CCD58CA00FF801C /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605DA5E2CCD58CA00FF801C /* SessionDetailView.swift */; };
-		2632CECE2C5E76AC00E4B344 /* VoleaMeasureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632CECD2C5E76AC00E4B344 /* VoleaMeasureApp.swift */; };
-		2632CED02C5E76AC00E4B344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632CECF2C5E76AC00E4B344 /* ContentView.swift */; };
-		2632CED22C5E76AC00E4B344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2632CED12C5E76AC00E4B344 /* Assets.xcassets */; };
 		2632CEDB2C5E76AC00E4B344 /* Volea Measure (Watch).app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2632CEDA2C5E76AC00E4B344 /* Volea Measure (Watch).app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2632CEE02C5E76AC00E4B344 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632CEDF2C5E76AC00E4B344 /* WatchApp.swift */; };
-		2632CEE22C5E76AC00E4B344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632CEE12C5E76AC00E4B344 /* ContentView.swift */; };
-		2632CEE42C5E76AD00E4B344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2632CEE32C5E76AD00E4B344 /* Assets.xcassets */; };
 		2632CEF42C5E777600E4B344 /* MeasureData in Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF32C5E777600E4B344 /* MeasureData */; };
 		2632CEF52C5E777600E4B344 /* MeasureData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF32C5E777600E4B344 /* MeasureData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2632CEF82C5E777A00E4B344 /* MeasureData in Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF72C5E777A00E4B344 /* MeasureData */; };
@@ -68,19 +61,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2605DA5E2CCD58CA00FF801C /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
 		2632CECA2C5E76AC00E4B344 /* Volea Measure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volea Measure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2632CECD2C5E76AC00E4B344 /* VoleaMeasureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoleaMeasureApp.swift; sourceTree = "<group>"; };
-		2632CECF2C5E76AC00E4B344 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2632CED12C5E76AC00E4B344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2632CEDA2C5E76AC00E4B344 /* Volea Measure (Watch).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volea Measure (Watch).app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2632CEDF2C5E76AC00E4B344 /* WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp.swift; sourceTree = "<group>"; };
-		2632CEE12C5E76AC00E4B344 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2632CEE32C5E76AD00E4B344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2632CEF12C5E772400E4B344 /* MeasureData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MeasureData; sourceTree = "<group>"; };
-		2632CEFB2C5E778300E4B344 /* Multiplatform.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Multiplatform.entitlements; sourceTree = "<group>"; };
-		2632CEFC2C5E778B00E4B344 /* Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Watch.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		266370F82CE280EC0071A236 /* Multiplatform */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Multiplatform; sourceTree = "<group>"; };
+		266371032CE281050071A236 /* Watch */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Watch; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2632CEC72C5E76AC00E4B344 /* Frameworks */ = {
@@ -106,8 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				2632CEF12C5E772400E4B344 /* MeasureData */,
-				2632CECC2C5E76AC00E4B344 /* Multiplatform */,
-				2632CEDE2C5E76AC00E4B344 /* Watch */,
+				266370F82CE280EC0071A236 /* Multiplatform */,
+				266371032CE281050071A236 /* Watch */,
 				2632CECB2C5E76AC00E4B344 /* Products */,
 				2632CEF22C5E777600E4B344 /* Frameworks */,
 			);
@@ -120,29 +109,6 @@
 				2632CEDA2C5E76AC00E4B344 /* Volea Measure (Watch).app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2632CECC2C5E76AC00E4B344 /* Multiplatform */ = {
-			isa = PBXGroup;
-			children = (
-				2632CECD2C5E76AC00E4B344 /* VoleaMeasureApp.swift */,
-				2632CECF2C5E76AC00E4B344 /* ContentView.swift */,
-				2605DA5E2CCD58CA00FF801C /* SessionDetailView.swift */,
-				2632CED12C5E76AC00E4B344 /* Assets.xcassets */,
-				2632CEFB2C5E778300E4B344 /* Multiplatform.entitlements */,
-			);
-			path = Multiplatform;
-			sourceTree = "<group>";
-		};
-		2632CEDE2C5E76AC00E4B344 /* Watch */ = {
-			isa = PBXGroup;
-			children = (
-				2632CEDF2C5E76AC00E4B344 /* WatchApp.swift */,
-				2632CEE12C5E76AC00E4B344 /* ContentView.swift */,
-				2632CEE32C5E76AD00E4B344 /* Assets.xcassets */,
-				2632CEFC2C5E778B00E4B344 /* Watch.entitlements */,
-			);
-			path = Watch;
 			sourceTree = "<group>";
 		};
 		2632CEF22C5E777600E4B344 /* Frameworks */ = {
@@ -170,6 +136,9 @@
 			dependencies = (
 				2632CEDD2C5E76AC00E4B344 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				266370F82CE280EC0071A236 /* Multiplatform */,
+			);
 			name = "Volea Measure";
 			packageProductDependencies = (
 				2632CEF32C5E777600E4B344 /* MeasureData */,
@@ -190,6 +159,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				266371032CE281050071A236 /* Watch */,
 			);
 			name = "Volea Measure (Watch)";
 			packageProductDependencies = (
@@ -241,7 +213,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2632CED22C5E76AC00E4B344 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2632CEE42C5E76AD00E4B344 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +230,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2632CED02C5E76AC00E4B344 /* ContentView.swift in Sources */,
-				2605DA5F2CCD58CA00FF801C /* SessionDetailView.swift in Sources */,
-				2632CECE2C5E76AC00E4B344 /* VoleaMeasureApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2632CEE22C5E76AC00E4B344 /* ContentView.swift in Sources */,
-				2632CEE02C5E76AC00E4B344 /* WatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +309,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -399,6 +365,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
@@ -429,7 +396,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
@@ -461,7 +428,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
@@ -483,7 +450,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,7 +487,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

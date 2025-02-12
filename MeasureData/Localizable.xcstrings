@@ -1,0 +1,64 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "WatchConnectivityStatus.NotInstalled.description" : {
+
+    },
+    "WatchConnectivityStatus.NotInstalled.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volea Measure is not installed on your Apple Watch"
+          }
+        }
+      }
+    },
+    "WatchConnectivityStatus.notPaired.description" : {
+
+    },
+    "WatchConnectivityStatus.notPaired.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You have no Apple Watch paired with your iPhone"
+          }
+        }
+      }
+    },
+    "WatchConnectivityStatus.NotReachable.description" : {
+
+    },
+    "WatchConnectivityStatus.NotReachable.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Apple Watch is out of reach"
+          }
+        }
+      }
+    },
+    "WatchConnectivityStatus.notSupported.description" : {
+
+    },
+    "WatchConnectivityStatus.notSupported.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Apple Watch is unsupported"
+          }
+        }
+      }
+    },
+    "WatchConnectivityStatus.reachable.description" : {
+
+    },
+    "WatchConnectivityStatus.reachable.title" : {
+
+    }
+  },
+  "version" : "1.0"
+}

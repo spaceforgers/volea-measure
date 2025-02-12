@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Volea Measure Watch App
+//  Volea Measure (Watch)
 //
 //  Created by Javier Galera Robles on 3/8/24.
 //
@@ -9,132 +9,63 @@ import SwiftUI
 import SwiftData
 import CoreMotion
 import WatchConnectivity
-
 import MeasureData
 
+/// The main view for the watch app that displays recording status and instructions.
+///
+/// This view dynamically updates its content based on the state of the recording session,
+/// which is managed by the watch session delegate. It shows a custom animated image when
+/// a session is active, displays status messages for movement recording, and falls back
+/// to instructing the user to use the iPhone app when no session is in progress.
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    
-    @State private var motionManager: CMMotionManager = CMMotionManager()
-    @State private var timer: Timer?
-    @State private var elapsedTimeTimer: Timer?
-    @State private var elapsedTime: TimeInterval = 0
-    
-    @State private var selectedMove: PadelMovementType = .backhand
-    @State private var selectedHand: Hand = .left
-    @State private var isRecording: Bool = false
-    
-    @State private var motionDataList: [CollectedMovement] = []
+    // Inject the watch session delegate from the environment.
+    // The delegate provides access to session-related state (e.g. whether a session or movement is active).
+    @Environment(WatchSessionDelegate.self) var sessionDelegate
     
     var body: some View {
         VStack {
-            if isRecording {
-                Text(formatTime(elapsedTime))
+            // If a recording session is active, display session-specific UI.
+            if sessionDelegate.sessionManager.isRecordingSession {
+                // Custom image indicating recording activity.
+                // The pulse effect and red accent convey urgency and recording status.
+                Image("custom.figure.tennis.badge.record")
+                    .symbolEffect(.pulse)
                     .font(.largeTitle)
-                    .fontDesign(.monospaced)
-                    .contentTransition(.numericText())
-                
-                Text("\(selectedMove.label) with \(selectedHand.label)")
-                    .font(.caption)
+                    .foregroundStyle(.red, .primary)
                     .padding()
                 
-                Button("Stop Recoding") {
-                    stopRecording()
+                // Display a dynamic message depending on whether a movement is being recorded.
+                Text(sessionDelegate.sessionManager.isRecordingMovement ? "Recording movement..." : "Get ready!")
+                    .font(.headline)
+                
+                Spacer()
+                    
+                // If a session is active but a movement is not currently being recorded,
+                // instruct the user that the iPhone app will trigger the recording.
+                if !sessionDelegate.sessionManager.isRecordingMovement {
+                    Text("Waiting for iPhone to start recording a movement.")
                 }
-                .padding()
+                
+                Spacer()
+                
+                // Show the count of recorded movements (if available).
+                Text("\(sessionDelegate.sessionManager.currentSession?.movements?.count ?? 0) movements recorded")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
                 
             } else {
-                Picker("Select Move", selection: $selectedMove) {
-                    ForEach(PadelMovementType.allCases) { move in
-                        Text(move.label)
-                            .tag(move)
-                    }
-                }
-                
-                Picker("Select Hand", selection: $selectedHand) {
-                    ForEach(Hand.allCases) { hand in
-                        Text(hand.label)
-                            .tag(hand)
-                    }
-                }
-                
-                Button("Start Recoding") {
-                    startRecording()
-                }
-                .padding()
+                // If no recording session is active, guide the user to use the iPhone app.
+                Image(systemName: "iphone")
+                    .font(.largeTitle)
+                    .padding()
+                Text("Use the iPhone app")
+                    .font(.headline)
+                Text("To start recording your movements and see the results.")
+                    .font(.subheadline)
             }
         }
-        .onAppear {
-            // Initialize WCSession
-            if WCSession.isSupported() {
-                WCSession.default.activate()
-            }
-        }
-    }
-    
-    private func startRecording() {
-        isRecording = true
-        
-        // Reset motion list and timer
-        elapsedTime = 0
-        motionDataList = []
-        
-        // Configure motion manager
-        motionManager.deviceMotionUpdateInterval = 1.0 / 60.0
-        
-        // Start motion updates
-        motionManager.startDeviceMotionUpdates()
-        
-        // Start the elapsed time timer
-        elapsedTimeTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
-            elapsedTime += 1
-        }
-        
-        // Start timer to collect data
-        timer = Timer.scheduledTimer(withTimeInterval: 1.0 / 60.0, repeats: true) { timer in
-            if let data = motionManager.deviceMotion {
-                let movement = CollectedMovement(session: nil,
-                                                 timestamp: .now,
-                                                 accelerationX: data.userAcceleration.x,
-                                                 accelerationY: data.userAcceleration.y,
-                                                 accelerationZ: data.userAcceleration.z,
-                                                 rotationX: data.rotationRate.x,
-                                                 rotationY: data.rotationRate.y,
-                                                 rotationZ: data.rotationRate.z)
-                
-                motionDataList.append(movement)
-            }
-        }
-    }
-    
-    private func stopRecording() {
-        isRecording = false
-        
-        motionManager.stopDeviceMotionUpdates()
-        timer?.invalidate()
-        elapsedTimeTimer?.invalidate()
-        elapsedTimeTimer = nil
-        
-        // Save session to SwiftData
-        let session = CollectedSession(movementType: selectedMove, handType: selectedHand)
-        modelContext.insert(session)
-        
-        for movement in motionDataList {
-            movement.session = session
-            modelContext.insert(movement)
-        }
-        
-        do {
-            try modelContext.save()
-        } catch {
-            print("Error saving session: \(error)")
-        }
-    }
-    
-    private func formatTime(_ timeInterval: TimeInterval) -> String {
-        let minutes = Int(timeInterval) / 60
-        let seconds = Int(timeInterval) % 60
-        return String(format: "%02d:%02d", minutes, seconds)
+        // Center align all multiline text for better readability.
+        .multilineTextAlignment(.center)
     }
 }
 

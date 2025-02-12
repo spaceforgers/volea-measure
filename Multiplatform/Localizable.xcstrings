@@ -1,0 +1,145 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld motion data" : {
+
+    },
+    "%lld moves" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld move"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "%lld moves"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "3D Visualization" : {
+
+    },
+    "Add" : {
+
+    },
+    "Attitude (Pitch, Roll, Yaw): (%.2f, %.2f, %.2f)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Attitude (Pitch, Roll, Yaw): (%1$.2f, %2$.2f, %3$.2f)"
+          }
+        }
+      }
+    },
+    "Attitude Quaternion: (%.2f, %.2f, %.2f, %.2f)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Attitude Quaternion: (%1$.2f, %2$.2f, %3$.2f, %4$.2f)"
+          }
+        }
+      }
+    },
+    "Done" : {
+
+    },
+    "Export" : {
+
+    },
+    "Finish Session" : {
+
+    },
+    "Gravity: (%.2f, %.2f, %.2f)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Gravity: (%1$.2f, %2$.2f, %3$.2f)"
+          }
+        }
+      }
+    },
+    "Index: %lld" : {
+
+    },
+    "Magnetic Field: (%.2f, %.2f, %.2f)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Magnetic Field: (%1$.2f, %2$.2f, %3$.2f)"
+          }
+        }
+      }
+    },
+    "No recorded movements" : {
+
+    },
+    "Raw Data" : {
+
+    },
+    "Record Movement" : {
+
+    },
+    "Recorded movements" : {
+
+    },
+    "Recording Session" : {
+
+    },
+    "Records" : {
+
+    },
+    "Relative Timestamp: %@" : {
+
+    },
+    "Rotation Rate: (%.2f, %.2f, %.2f)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Rotation Rate: (%1$.2f, %2$.2f, %3$.2f)"
+          }
+        }
+      }
+    },
+    "Sensor Timestamp: %@" : {
+
+    },
+    "Session Details" : {
+
+    },
+    "Start Session" : {
+
+    },
+    "Stop Movement" : {
+
+    },
+    "Timestamp: %@" : {
+
+    },
+    "User Acceleration: (%.2f, %.2f, %.2f)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "User Acceleration: (%1$.2f, %2$.2f, %3$.2f)"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
