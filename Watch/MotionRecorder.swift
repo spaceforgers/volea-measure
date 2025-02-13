@@ -12,9 +12,6 @@ import SwiftData
 import MeasureData
 
 /// A class responsible for recording motion sensor data using Core Motion.
-///
-/// By marking the class as `@MainActor`, all mutable state is confined to the main actor.
-/// This avoids data races in Swift 6’s strict concurrency mode.
 @Observable
 final class MotionRecorder {
     /// List of recorded motion data samples.

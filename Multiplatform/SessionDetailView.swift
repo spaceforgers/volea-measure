@@ -19,7 +19,11 @@ struct SessionDetailView: View {
     /// Provides the model context for performing persistent data operations.
     @Environment(\.modelContext) private var modelContext
     
+    /// The ExportManager environment
+    @Environment(ExportManager.self) private var exportManager
+    
     // MARK: - Properties
+    @State private var exportURL: URL? = nil
     
     /// The recording session whose details are displayed.
     var session: RecordingSession
@@ -69,7 +73,19 @@ struct SessionDetailView: View {
         }
         .navigationBarTitle("Session Details")
         .toolbar {
-            // Toolbar items can be added here if needed.
+            ToolbarItem(placement: .topBarTrailing) {
+                if let exportURL {
+                    ShareLink("Export", item: exportURL)
+                }
+            }
+        }
+        
+        .onAppear {
+            do {
+                exportURL = try exportManager.export(sessions: [session])
+            } catch {
+                print("[Export] Failed to export session: \(error.localizedDescription)")
+            }
         }
     }
     

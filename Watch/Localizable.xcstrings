@@ -1,0 +1,78 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld movements recorded" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld movement recorded"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "%lld movements recorded"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Get ready!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get ready!"
+          }
+        }
+      }
+    },
+    "Recording movement..." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recording movement..."
+          }
+        }
+      }
+    },
+    "To start recording your movements and see the results." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To start recording your movements and see the results."
+          }
+        }
+      }
+    },
+    "Use the iPhone app" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use the iPhone app"
+          }
+        }
+      }
+    },
+    "Waiting for iPhone to start recording a movement." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waiting for iPhone to start recording a movement."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

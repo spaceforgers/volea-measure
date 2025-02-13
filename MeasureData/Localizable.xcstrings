@@ -2,7 +2,14 @@
   "sourceLanguage" : "en",
   "strings" : {
     "WatchConnectivityStatus.NotInstalled.description" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Install Volea Measure on your Apple Watch to continue"
+          }
+        }
+      }
     },
     "WatchConnectivityStatus.NotInstalled.title" : {
       "localizations" : {
@@ -15,7 +22,14 @@
       }
     },
     "WatchConnectivityStatus.notPaired.description" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pair an Apple Watch with your iPhone to continue"
+          }
+        }
+      }
     },
     "WatchConnectivityStatus.notPaired.title" : {
       "localizations" : {
@@ -28,7 +42,14 @@
       }
     },
     "WatchConnectivityStatus.NotReachable.description" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Apple Watch may be locked or Volea Measure App is not opened. Try again."
+          }
+        }
+      }
     },
     "WatchConnectivityStatus.NotReachable.title" : {
       "localizations" : {
@@ -41,7 +62,14 @@
       }
     },
     "WatchConnectivityStatus.notSupported.description" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Apple Watch is not supported by Volea Measure, please check if your Apple Watch is updated."
+          }
+        }
+      }
     },
     "WatchConnectivityStatus.notSupported.title" : {
       "localizations" : {

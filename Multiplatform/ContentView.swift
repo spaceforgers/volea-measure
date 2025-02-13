@@ -37,22 +37,15 @@ struct ContentView: View {
             content
                 .navigationTitle("Records")
                 .toolbar {
-                    // Toolbar with an Export button on the leading side.
-                    ToolbarItem(placement: .topBarLeading) {
-                        Button("Export") {
-                            // TODO: Implement the export functionality.
-                        }
-                    }
-                    
-                    // Toolbar with an Add button on the trailing side.
+                    // Toolbar with an Add and Export button on the trailing side.
                     ToolbarItem(placement: .topBarTrailing) {
                         Button("Add", systemImage: "plus") {
                             isNewSessionPresented.toggle()
                         }
                     }
                 }
-                // Navigation destinations that enable deep linking:
-                // one for session details and another for movement details.
+            // Navigation destinations that enable deep linking:
+            // one for session details and another for movement details.
                 .navigationDestination(for: RecordingSession.self, destination: SessionDetailView.init)
                 .navigationDestination(for: RecordingMovement.self, destination: SessionMovementDetailView.init)
         }

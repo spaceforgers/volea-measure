@@ -2,7 +2,14 @@
   "sourceLanguage" : "en",
   "strings" : {
     "%lld motion data" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld motion data"
+          }
+        }
+      }
     },
     "%lld moves" : {
       "localizations" : {
@@ -27,10 +34,24 @@
       }
     },
     "3D Visualization" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3D Visualization"
+          }
+        }
+      }
     },
     "Add" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add"
+          }
+        }
+      }
     },
     "Attitude (Pitch, Roll, Yaw): (%.2f, %.2f, %.2f)" : {
       "localizations" : {
@@ -53,13 +74,34 @@
       }
     },
     "Done" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        }
+      }
     },
     "Export" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Export"
+          }
+        }
+      }
     },
     "Finish Session" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finish Session"
+          }
+        }
+      }
     },
     "Gravity: (%.2f, %.2f, %.2f)" : {
       "localizations" : {
@@ -72,7 +114,14 @@
       }
     },
     "Index: %lld" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Index: %lld"
+          }
+        }
+      }
     },
     "Magnetic Field: (%.2f, %.2f, %.2f)" : {
       "localizations" : {
@@ -85,25 +134,74 @@
       }
     },
     "No recorded movements" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No recorded movements"
+          }
+        }
+      }
     },
     "Raw Data" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raw Data"
+          }
+        }
+      }
     },
     "Record Movement" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record Movement"
+          }
+        }
+      }
     },
     "Recorded movements" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recorded movements"
+          }
+        }
+      }
     },
     "Recording Session" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recording Session"
+          }
+        }
+      }
     },
     "Records" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Records"
+          }
+        }
+      }
     },
     "Relative Timestamp: %@" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relative Timestamp: %@"
+          }
+        }
+      }
     },
     "Rotation Rate: (%.2f, %.2f, %.2f)" : {
       "localizations" : {
@@ -116,19 +214,54 @@
       }
     },
     "Sensor Timestamp: %@" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensor Timestamp: %@"
+          }
+        }
+      }
     },
     "Session Details" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Session Details"
+          }
+        }
+      }
     },
     "Start Session" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start Session"
+          }
+        }
+      }
     },
     "Stop Movement" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop Movement"
+          }
+        }
+      }
     },
     "Timestamp: %@" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timestamp: %@"
+          }
+        }
+      }
     },
     "User Acceleration: (%.2f, %.2f, %.2f)" : {
       "localizations" : {

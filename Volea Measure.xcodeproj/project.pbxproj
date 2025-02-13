@@ -13,6 +13,7 @@
 		2632CEF82C5E777A00E4B344 /* MeasureData in Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF72C5E777A00E4B344 /* MeasureData */; };
 		2632CEF92C5E777B00E4B344 /* MeasureData in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2632CEF72C5E777A00E4B344 /* MeasureData */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		26B96A892D5D4556001439FE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 26B96A882D5D4551001439FE /* README.md */; };
+		26B96AB32D5DFB1B001439FE /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 26B96AB22D5DFB1B001439FE /* ZIPFoundation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2632CEF42C5E777600E4B344 /* MeasureData in Frameworks */,
+				26B96AB32D5DFB1B001439FE /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,7 @@
 			name = "Volea Measure";
 			packageProductDependencies = (
 				2632CEF32C5E777600E4B344 /* MeasureData */,
+				26B96AB22D5DFB1B001439FE /* ZIPFoundation */,
 			);
 			productName = "Volea Measure";
 			productReference = 2632CECA2C5E76AC00E4B344 /* Volea Measure.app */;
@@ -201,6 +204,9 @@
 				Base,
 			);
 			mainGroup = 2632CEC12C5E76AB00E4B344;
+			packageReferences = (
+				26B96AB12D5DFB1B001439FE /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
 			productRefGroup = 2632CECB2C5E76AC00E4B344 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -547,6 +553,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		26B96AB12D5DFB1B001439FE /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		2632CEF32C5E777600E4B344 /* MeasureData */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -555,6 +572,11 @@
 		2632CEF72C5E777A00E4B344 /* MeasureData */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MeasureData;
+		};
+		26B96AB22D5DFB1B001439FE /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26B96AB12D5DFB1B001439FE /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

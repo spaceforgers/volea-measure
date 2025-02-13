@@ -20,12 +20,16 @@ struct VoleaMeasureApp: App {
     // This delegate is responsible for monitoring and handling watch connectivity events.
     @State var sessionDelegate: PhoneSessionDelegate = .init()
     
+    // ExportManager for exporting sessions into CSVs
+    @State var exportManager: ExportManager = .init()
+    
     var body: some Scene {
         WindowGroup {
             // The primary content view of the app.
             ContentView()
-                // Inject the session delegate into the environment so that child views can react to connectivity status.
+                // Inject the session delegate and export manager into the environment so that child views can react to connectivity status and exporting feature.
                 .environment(sessionDelegate)
+                .environment(exportManager)
         }
         // Configure the SwiftData model container for our persistence models.
         // This container is responsible for managing RecordingSession, RecordingMovement, and RecordingMotionData entities.
